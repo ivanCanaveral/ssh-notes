@@ -117,3 +117,17 @@ With SSH keys, if someone gains access to your computer, they also gain access t
 ```bash
 ssh-add ~/.ssh/id_ed25519
 ```
+
+### ssh-copy-id
+
+In order to use a key to connect to a server, we need to copy the public key in the `.shh/authorized_keys` file. However, the `ssh-copy-id` tool simplifies this process:
+
+```bash
+ssh-copy-id -i ~/.ssh/mykey user@host
+```
+
+We can now test if the key is working:
+
+```bash
+ssh -i ~/.ssh/mykey user@host
+```
