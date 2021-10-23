@@ -33,7 +33,7 @@ network:
     abc1:
       dhcp4: no
       addresses:
-        - 192.168.1.233
+        - 192.168.1.233/24
       gateway4: 192.168.1.1 # router's ip
       nameservers:
           addresses: [8.8.8.8, 1.1.1.1] # google, cloudflare
