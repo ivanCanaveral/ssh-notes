@@ -34,9 +34,9 @@ network:
       dhcp4: no
       addresses:
         - 192.168.1.233
-      gateway4: 192.168.1.1 #router's ip
+      gateway4: 192.168.1.1 # router's ip
       nameservers:
-          addresses: [8.8.8.8, 1.1.1.1]
+          addresses: [8.8.8.8, 1.1.1.1] # google, cloudflare
 ```
 
 3. Apply changes
