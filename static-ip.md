@@ -38,3 +38,15 @@ network:
       nameservers:
           addresses: [8.8.8.8, 1.1.1.1]
 ```
+
+3. Apply changes
+
+```bash
+sudo netplan apply
+```
+
+4. Check if it works:
+
+```bash
+ip addr show dev abc1
+```
